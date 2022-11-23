@@ -1,0 +1,5 @@
+/* Change the white to any color */
+.logincss input:-webkit-autofill { 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: aliceblue;
+}
