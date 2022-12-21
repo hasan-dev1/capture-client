@@ -85,7 +85,7 @@ const ServicePage = () => {
       .catch((err) => console.error(err));
   };
   return (
-    <div className="card card-compact rounded bg-base-100 shadow-xl w-4/5 mx-auto my-3 ">
+    <div className="card card-compact rounded bg-base-100 shadow-xl w-4/5 mx-auto mb-3 pt-16 ">
       <figure>
         <PhotoView src={img}>
           <img

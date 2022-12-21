@@ -41,58 +41,62 @@ const AddedingNewService = () => {
     }
   };
   return (
-    <div>
-      <div className="w-2/3 mx-auto p-5  bg-slate-300 rounded my-5">
-        <h2 className="text-4xl text-center my-4 font-bold">Add A Service</h2>
-        <form onSubmit={handleServiceAddeding}>
-          <div className="grid lg:grid-cols-2 grid-cols-1">
-            <div>
-              <div className="mb-8 mt-1">
-                <span className="font-bold">Image</span>
-                <input
-                  className="input input-bordered w-full rounded "
-                  placeholder="Add Servide Image*"
-                  name="image"
-                  type="text"
-                />
+    <div className="mb-4">
+      <div className="w-2/3 mx-auto   p-5">
+        <div className="bg-slate-300 mt-12 py-4 rounded">
+          <h2 className="text-4xl text-center mt-12 font-bold">
+            Add A Service
+          </h2>
+          <form onSubmit={handleServiceAddeding}>
+            <div className="grid lg:grid-cols-2 grid-cols-1 px-6">
+              <div>
+                <div className="mb-4 mt-1">
+                  <span className="font-bold">Image</span>
+                  <input
+                    className="input input-bordered w-full rounded "
+                    placeholder="Add Servide Image*"
+                    name="image"
+                    type="text"
+                  />
+                </div>
+                <div className="mb-4">
+                  <span className="font-bold">Name</span>
+                  <input
+                    className="input input-bordered w-full rounded "
+                    placeholder="Add Service Header*"
+                    name="name"
+                    type="text"
+                  />
+                </div>
+                <div className="mb-6">
+                  <span className="font-bold">Price</span>
+                  <input
+                    className="input input-bordered w-full rounded "
+                    placeholder="Add Price*"
+                    name="price"
+                    type="text"
+                  />
+                </div>
               </div>
-              <div className="mb-10">
-                <span className="font-bold">Name</span>
-                <input
-                  className="input input-bordered w-full rounded "
-                  placeholder="Add Service Header*"
-                  name="name"
-                  type="text"
-                />
-              </div>
-              <div className="mb-10">
-                <span className="font-bold">Price</span>
-                <input
-                  className="input input-bordered w-full rounded "
-                  placeholder="Add Price*"
-                  name="price"
-                  type="text"
-                />
+              <div className=" mx-3">
+                <span>Descryption</span>
+                <textarea
+                  className="w-full focus:outline-none border-2 p-3 rounded"
+                  name="descryption"
+                  placeholder="Write Your Service Descryption ...."
+                  cols="30"
+                  rows="9"
+                ></textarea>
               </div>
             </div>
-            <div className=" mx-3">
-              <span>Descryption</span>
-              <textarea
-                className="w-full focus:outline-none border-2 p-3 rounded"
-                name="descryption"
-                placeholder="Write Your Service Descryption ...."
-                cols="30"
-                rows="10"
-              ></textarea>
-            </div>
-          </div>
-          <button
-            type="submit"
-            className="btn btn-success text-white text-bold block rounded w-1/2 my-5 mx-auto "
-          >
-            Submit
-          </button>
-        </form>
+            <button
+              type="submit"
+              className="btn btn-success text-white text-bold block rounded w-1/2 my-5 mx-auto "
+            >
+              Submit
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );

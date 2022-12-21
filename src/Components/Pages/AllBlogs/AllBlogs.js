@@ -5,9 +5,9 @@ const AllBlogs = () => {
     useTitle('Blog')
     return (
       <div>
-        <div className="w-3/5 mx-auto">
+        <div className="w-3/5 mx-auto pt-12">
           <div>
-            <h3 className="text-4xl font-bold text-center my-12">
+            <h3 className="text-4xl font-bold text-center mb-12">
               Importent Questions
             </h3>
           </div>

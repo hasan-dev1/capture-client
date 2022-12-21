@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const { useEffect } = require("react")
 
 const useTitle = title =>{
@@ -7,3 +9,5 @@ const useTitle = title =>{
 }
 
 export default useTitle;
+
+
